@@ -1,0 +1,15 @@
+[submodule "desim_benchmark"]
+	path = desim_benchmark
+	url = https://github.com/PatatasDelPapa/desim_benchmark.git
+[submodule "desim_mpmc"]
+	path = desim_mpmc
+	url = https://github.com/PatatasDelPapa/desim_mpmc.git
+[submodule "simulator_benchmark"]
+	path = simulator_benchmark
+	url = https://github.com/PatatasDelPapa/simulator_benchmark.git
+[submodule "simrs_benchmark"]
+	path = simrs_benchmark
+	url = https://github.com/PatatasDelPapa/simrs_benchmark.git
+[submodule "simulator"]
+	path = simulator
+	url = https://github.com/PatatasDelPapa/simulator.git

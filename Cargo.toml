@@ -1,0 +1,9 @@
+[workspace]
+
+members = [
+    "simulator",
+    "desim_benchmark",
+    "desim_mpmc",
+    "simrs_benchmark",
+    "simulator_benchmark",
+]
