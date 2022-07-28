@@ -752,6 +752,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "sim_v2_benchmark"
+version = "0.1.0"
+dependencies = [
+ "criterion",
+ "simulator_nightly",
+]
+
+[[package]]
 name = "simrs"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -790,6 +798,10 @@ dependencies = [
  "criterion",
  "simulator",
 ]
+
+[[package]]
+name = "simulator_nightly"
+version = "0.1.0"
 
 [[package]]
 name = "smallvec"
