@@ -6,5 +6,7 @@ members = [
     "desim_mpmc",
     "simrs_benchmark",
     "simulator_benchmark",
-    "benchmarks"
+    "benchmarks",
+    "sim_v2_benchmark",
+    "simulator_nightly",
 ]

@@ -13,3 +13,9 @@
 [submodule "simulator"]
 	path = simulator
 	url = https://github.com/PatatasDelPapa/simulator.git
+[submodule "simulator_nightly"]
+	path = simulator_nightly
+	url = https://github.com/PatatasDelPapa/simulator_nightly.git
+[submodule "simulator_nightly_benchmark"]
+	path = simulator_nightly_benchmark
+	url = https://github.com/PatatasDelPapa/simulator_nightly_benchmark.git
