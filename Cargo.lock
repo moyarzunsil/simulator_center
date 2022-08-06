@@ -43,6 +43,7 @@ version = "0.1.0"
 dependencies = [
  "criterion",
  "desim_benchmark",
+ "sim_v2_benchmark",
  "simrs_benchmark",
  "simulator_benchmark",
 ]
