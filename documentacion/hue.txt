@@ -1,0 +1,34 @@
+Anotas las ventajas de mi libreria
+y las desventajas de las mias
+
+Agregar los experimentos que he hecho
+	Explicando los experimentos cuantas veces se corrio
+	Explicar el experimento
+	Que es lo que se considero para ver los tiempos
+Explicar como fueron mejorando 
+	Que cambios se hicieron
+
+Lo mismo que le explique al profe
+El experimento bien explicado
+
+Antecedentes: Demostrar porque las librerias que elegi son usadas en el estado del arte.
+
+Cambiar los hashmap a vectores [/]
+
+Comprobar que los eventos se agendan correctamente [/]
+Escribir sobre eso [/?]
+
+Anotar el tema de que mi libreria tiene la capacidad de activar varias entidades en el mismo tiempo
+la capacidad de no hacer passivate cuando se hace un activate.
+
+Medir consumo de memoria. [/]
+Medir el costo de pausar un generador y reanudar otro
+
+usar valgrind masif 
+"go build main.go && valgrind --tool=massif --time-unit=B --pages-as-heap=yes ./main ./TheyBleedPixels.exe"
+para medir heap usage de los experimentos. [/]
+
+Benchmarks
+	V1: Modelo sin optimizar
+	V2: HashMap por Vec
+	V3: Trait Object por Concrete Type [/]

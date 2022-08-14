@@ -1,0 +1,15 @@
+Execution Time
+1.- Desim
+2.- Simrs
+3.- Simulator
+
+Memory Consumption
+1.- Simrs
+2.- Simulation
+3.- Desim
+
+Simrs: no es apto para modelos complicados, requiere de mucho control flow lo que hara el codigo dificil de mantener.
+
+Desim: tiene las capacidades para codificar modelos complicados sin embargo ciertas decisiones en como la libreria maneja los eventos emitidos por los generadores complica esta situación. En desim hacer un Activate implica hacer un Passivate lo cual complica modelar situaciones con paralelismo y concurrencia donde las entidades deben detenerse una cantidad indeterminada de tiempo, por ejemplo detenerse hasta que reciban una señal, en desim el mandar esa señal implica que el que mande la señal detenga su ejecución lo cual en la mayoria de casos no es deseable y es dificil trabajar en un workaround para solucionarlo. Si desim no pausara la ejecución del que manda el Activate el comportamiento previo podria imitarse haciendo que luego de mandar la señal se pause.
+
+Simulator: Debido a que utiliza una libreria para simular generadores debe pagar un costo que Desim puede ignorar el cual Simrs tambien ignora porque no provee esta funcionalidad -> Agregar una funcionalidad para cambiar como funciona la libreria de forma interna para ver el rendimiento utilizando los generadores nativos.
