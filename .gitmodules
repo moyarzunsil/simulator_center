@@ -1,21 +1,21 @@
-[submodule "desim_benchmark"]
-	path = desim_benchmark
-	url = https://github.com/PatatasDelPapa/desim_benchmark.git
-[submodule "desim_mpmc"]
-	path = desim_mpmc
-	url = https://github.com/PatatasDelPapa/desim_mpmc.git
-[submodule "simulator_benchmark"]
-	path = simulator_benchmark
-	url = https://github.com/PatatasDelPapa/simulator_benchmark.git
-[submodule "simrs_benchmark"]
-	path = simrs_benchmark
-	url = https://github.com/PatatasDelPapa/simrs_benchmark.git
+[submodule "Benchmarks/simulator_benchmark"]
+	path = Benchmarks/simulator_benchmark
+	url = https://github.com/PatatasDelPapa/simulator_benchmark
+[submodule "Benchmarks/simrs_benchmark"]
+	path = Benchmarks/simrs_benchmark
+	url = https://github.com/PatatasDelPapa/simrs_benchmark
+[submodule "Benchmarks/desim_benchmark"]
+	path = Benchmarks/desim_benchmark
+	url = https://github.com/PatatasDelPapa/desim_benchmark
+[submodule "Benchmarks/simulator_nightly_benchmark"]
+	path = Benchmarks/simulator_nightly_benchmark
+	url = https://github.com/PatatasDelPapa/simulator_nightly_benchmark
 [submodule "simulator"]
 	path = simulator
-	url = https://github.com/PatatasDelPapa/simulator.git
+	url = https://github.com/PatatasDelPapa/simulator
 [submodule "simulator_nightly"]
 	path = simulator_nightly
-	url = https://github.com/PatatasDelPapa/simulator_nightly.git
-[submodule "simulator_nightly_benchmark"]
-	path = simulator_nightly_benchmark
-	url = https://github.com/PatatasDelPapa/simulator_nightly_benchmark.git
+	url = https://github.com/PatatasDelPapa/simulator_nightly
+[submodule "Benchmarks/desim_mpmc"]
+	path = Benchmarks/desim_mpmc
+	url = https://github.com/PatatasDelPapa/desim_mpmc
