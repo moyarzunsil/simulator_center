@@ -2,12 +2,12 @@
 
 members = [
     "simulator",
-    "desim_benchmark",
-    "desim_mpmc",
-    "simrs_benchmark",
-    "simulator_benchmark",
-    "benchmarks",
-    "simulator_nightly_benchmark",
+    "Benchmarks/desim_benchmark",
+    "Benchmarks/desim_mpmc",
+    "Benchmarks/simrs_benchmark",
+    "Benchmarks/simulator_benchmark",
+    "Benchmarks/All_Benchmarks",
+    "Benchmarks/simulator_nightly_benchmark",
     "simulator_nightly",
 ]
 
