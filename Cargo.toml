@@ -1,13 +1,14 @@
 [workspace]
 
 members = [
-    "simulator",
     "Benchmarks/desim_benchmark",
     "Benchmarks/desim_mpmc",
     "Benchmarks/simrs_benchmark",
     "Benchmarks/simulator_benchmark",
     "Benchmarks/All_Benchmarks",
     "Benchmarks/simulator_nightly_benchmark",
+    "Benchmarks/simulator_mpmc",
+    "simulator",
     "simulator_nightly",
 ]
 

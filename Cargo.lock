@@ -801,6 +801,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "simulator_mpmc"
+version = "0.1.0"
+dependencies = [
+ "simulator",
+]
+
+[[package]]
 name = "simulator_nightly"
 version = "0.1.0"
 
