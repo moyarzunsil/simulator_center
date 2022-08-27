@@ -19,3 +19,6 @@
 [submodule "Benchmarks/desim_mpmc"]
 	path = Benchmarks/desim_mpmc
 	url = https://github.com/PatatasDelPapa/desim_mpmc
+[submodule "Benchmarks/simulator_mpmc"]
+	path = Benchmarks/simulator_mpmc
+	url = https://github.com/PatatasDelPapa/simulator_mpmc
