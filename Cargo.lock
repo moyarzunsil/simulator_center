@@ -804,6 +804,7 @@ dependencies = [
 name = "simulator_mpmc"
 version = "0.1.0"
 dependencies = [
+ "criterion",
  "simulator",
 ]
 
