@@ -8,6 +8,7 @@ members = [
     "Benchmarks/All_Benchmarks",
     "Benchmarks/simulator_nightly_benchmark",
     "Benchmarks/simulator_mpmc",
+    "Benchmarks/simrs_mpmc",
     "simulator",
     "simulator_nightly",
 ]

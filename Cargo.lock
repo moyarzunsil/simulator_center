@@ -762,15 +762,22 @@ dependencies = [
 
 [[package]]
 name = "simrs"
-version = "0.1.2"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e5c9275ab08e0c8f84975b75d524f772c1f6b2245fad2fecbffceb3e3d5585f2"
+checksum = "e8937390661e4a7ccbee980b8bfda250ff7f90b2557ee0909d5c06381fe682bd"
 
 [[package]]
 name = "simrs_benchmark"
 version = "0.1.0"
 dependencies = [
  "criterion",
+ "simrs",
+]
+
+[[package]]
+name = "simrs_mpmc"
+version = "0.1.0"
+dependencies = [
  "simrs",
 ]
 
