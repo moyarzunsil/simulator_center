@@ -225,6 +225,7 @@ dependencies = [
 name = "desim_mpmc"
 version = "0.1.0"
 dependencies = [
+ "criterion",
  "desim",
 ]
 
@@ -778,6 +779,7 @@ dependencies = [
 name = "simrs_mpmc"
 version = "0.1.0"
 dependencies = [
+ "criterion",
  "simrs",
 ]
 
