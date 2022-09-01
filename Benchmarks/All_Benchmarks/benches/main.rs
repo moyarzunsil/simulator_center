@@ -8,7 +8,7 @@ use simulator_benchmark::simulation as simulator_simulation;
 use sim_v2::simulation as sim_v2_simulation;
 
 fn bench(c: &mut Criterion) {
-    let mut group = c.benchmark_group("simulation");
+    let mut group = c.benchmark_group("simulations");
     for limit in [10000, 20000, 30000, 40000, 50000] {
         group.bench_with_input(BenchmarkId::new("desim", limit), &limit, |b, &limit| {
             b.iter(|| desim_simulation(black_box(limit as f64)));
