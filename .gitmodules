@@ -25,3 +25,6 @@
 [submodule "Benchmarks/simrs_mpmc"]
 	path = Benchmarks/simrs_mpmc
 	url = https://github.com/PatatasDelPapa/simrs_mpmc.git
+[submodule "Benchmarks/simulator_nightly_mpmc"]
+	path = Benchmarks/simulator_nightly_mpmc
+	url = https://github.com/PatatasDelPapa/simulator_nightly_mpmc.git

@@ -7,6 +7,7 @@ members = [
     "Benchmarks/simulator_benchmark",
     "Benchmarks/All_Benchmarks",
     "Benchmarks/simulator_nightly_benchmark",
+    "Benchmarks/simulator_nightly_mpmc",
     "Benchmarks/simulator_mpmc",
     "Benchmarks/simrs_mpmc",
     "simulator",
@@ -16,3 +17,4 @@ members = [
 [profile.release]
 lto = "fat"
 codegen-units = 1
+debug = true
