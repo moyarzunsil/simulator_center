@@ -1,0 +1,6 @@
+1.0: Library as it was
+  - State and ResumeWith
+2.0: Removed State and ResumeWith
+  - changed step() to step_with(resume_with: R)
+3.0: Removed insertion order
+  - (Reverse(Duration), id) -> Reverse(Duration)

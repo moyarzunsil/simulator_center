@@ -1,0 +1,30 @@
+Basically Desim has a restriction that scheduling a different generator will not schedule back the generator sending the event.
+
+I believe that imitating that behaviour is causing a lot of cost on my library and I will test it
+
+Flamegraph Config:
+Model: 		simulator_mpmc
+Configuration:	50000 	seconds
+		3 	producers 
+		4 	consumers	
+
+Strategy 1: Imitate the desim restriction on both Simrs and Simulator.
+ Simrs: Did not have a significant time cost 8 seconds compared to the 5 seconds of desim.
+ Simulator: Oh god 24 seconds on the 50000 simulated time.
+  Flamegraph reveals that a lot of time is spent in 2 functions
+    * Simulation<R>::run_one_step (7.41%)
+	* Eventually it calls Scheduler::schedule (7.41%)
+	  * Curiosly BinaryHeap<T>::push takes only (3.70%) and it's part of schedule.
+    * Simulation<R>::step (92.59%)
+    This get divided into 3 functions
+	* Container<R>::step (55.56%)
+	  * Probably not much to optimize here because it calls genawaiter almost instantly without loss of %
+	  * models::consumer (25.93%) vs models::producer(11.11%) it's probably because the consumer is more active (?)
+		* consumer::poll (7.41%) - Cell<T>::set (11.11%)
+		* producer::poll (7.41%) - Cell<T>::set (3.70%)
+		* Why the Cell<T>::set is so different between models?
+	* Scheduler::pop (18.52%)
+	  * Probably not much to optimize here because it calls BinaryHeap<T>::pop without loss of %
+	* Simulation<R>::get_resume_with (18.52)
+	  * This is probably one of my bottleneck I should eliminate this function from the core loop
+	  * It immediately calls HashMap<K,V,S>::get without loss of %
